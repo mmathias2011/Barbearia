@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Contato</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+
+    </head>
+    <body>
+        <header>
+            <div class="cabecalho">
+    
+                <h1><img src="imagens/logo.png" alt="Logo barbearia Alura"></h1>
+    
+                <nav>   
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+        <main>
+            <form>
+                <!-- label id para relacionar ao input, tbm para quando clicar no texto da label o cursor ir ao input-->
+                <label for="nomesobrenome">Nome e Sobrenome:</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+                <!--required para que seja um campo obrigatório e placeholder para preencher uma sugestão no campo input-->
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="exemplo@dominio.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) - xxxxx-xxxx">
+                
+                <label for="mensagem">Mensagem</label>
+                <textarea class="input-padrao" id="mensagem" required></textarea >
+
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contato" id="radio-email">Email</label>
+                    
+
+                    <label for="radio-telefone"><input type="radio" name="contato" id="radio-telefone">Ligação</label>
+                    
+
+                    <label for="radio-whatsapp"><input type="radio" name="contato" id="radio-whatsapp">WhatsApp</label>
+
+                    <!--fieldset para campos de formuário e legend para os textos da descrição do formulário-->
+                    <fieldset>
+                        <legend>Qual horário prefere receber nosso contato?</legend>
+                        <!--select para menu dropdown-->
+                        <select>
+                            <!--opção do menu-->
+                            <option>Manhâ</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                    </fieldset>
+                     
+
+                    <label><input class="checkbox" type="checkbox">Gostaria de receber nossas novidades por Email?</label>
+
+                </filedset>
+
+                
+
+                <input type="submit" value="Enviar Formulário" class="enviar"> 
+
+            </form>
+
+            <table>
+                <!--tag semantia ao cabeçalho da tabela-->
+                <thead>
+                    <th>Dia</th>
+                    <th>Hora</th>
+                </thead>
+                <!--tag semantica ao corpo da tabela-->
+                <tbody>
+                    <!--table row, linha da tabela-->
+                    <tr>
+                        <!--colspan=x para mesclar as células desejadas sendo x o numero das células a serem mescladas-->
+                        <td colspan="2" style="text-align: center;">Teste do colspan</td>
+                    </tr>
+                    <tr>
+                        <!--table data, dado da tabela-->
+                        <td>Segunda</td>
+                        <td>8h ~ 20</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </main>
+
+        <footer>
+            <img src="imagens/logo-branco.png" alt="Logo barbearia Alura">
+            <p class="copyrigth">&copy; Copyrigth Barbearia Alura &copy;</p>
+        </footer>
+    </body>
+</html>
